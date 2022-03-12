@@ -1,0 +1,14 @@
+const assumptions = {
+    "setPublicClassFields": true
+  };
+  
+const plugins = [
+  ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true } ],
+  ["@babel/plugin-proposal-class-properties"],
+];
+
+const preset = {
+  presets: ['@babel/preset-env', '@babel/preset-react']
+}
+  
+module.exports = { assumptions, preset, plugins };

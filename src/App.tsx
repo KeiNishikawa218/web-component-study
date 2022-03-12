@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {SimpleGreeting} from './lib/web-components/simple-greeting'
+import {createComponent} from '@lit-labs/react';
+
+export const MyElementComponent = createComponent(
+  React,
+  'simple-greeting',
+  SimpleGreeting
+);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>test</p>
+      {/* <simple-greeting></simple-greeting> */}
+      <MyElementComponent name="World"></MyElementComponent>
+      <p>test2</p>
     </div>
   );
 }

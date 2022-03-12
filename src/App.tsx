@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {SimpleGreeting} from './lib/web-components/simple-greeting'
 import {createComponent} from '@lit-labs/react';
